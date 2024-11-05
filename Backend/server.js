@@ -15,38 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Define a route for the root URL
-app.get("/jokes", (req, res) => {
- const jokes = 
-  [
-    {
-      "id": 1,
-      "name": "joke1",
-      "content": "Why did the scarecrow win an award? Because he was outstanding in his field!"
-    },
-    {
-      "id": 2,
-      "name": "joke2",
-      "content": "Why don't scientists trust atoms? Because they make up everything!"
-    },
-    {
-      "id": 3,
-      "name": "joke3",
-      "content": "Why did the math book look sad? Because it had too many problems."
-    },
-    {
-      "id": 4,
-      "name": "joke4",
-      "content": "Why did the computer go to therapy? Because it had a hard drive!"
-    },
-    {
-      "id": 5,
-      "name": "joke5",
-      "content": "Why do we never tell secrets on a farm? Because the potatoes have eyes and the corn has ears."
-    }
-  ]
-  res.send(jokes);
- 
-});
+
 
 // Example route with query parameters
 app.get("/greet", (req, res) => {
